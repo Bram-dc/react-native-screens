@@ -184,8 +184,7 @@ internal class StackHeaderCoordinatorLayout(
                 provider.clearInvalidationFlags(StackHeaderInvalidationFlags.TITLE)
             }
 
-            if (needsRebuild || provider.invalidationFlags.containsAny(StackHeaderInvalidationFlags.TITLE_APPEARANCE)
-            ) {
+            if (needsRebuild || provider.invalidationFlags.containsAny(StackHeaderInvalidationFlags.TITLE_APPEARANCE)) {
                 applicator.applyTitleAndSubtitleAppearance(appBar, provider)
                 provider.clearInvalidationFlags(StackHeaderInvalidationFlags.TITLE_APPEARANCE)
             }
