@@ -27,6 +27,7 @@ import TestStackHeaderSubviewOnPress from './test-stack-header-subview-onpress-i
 import TestStackHeaderSelectiveUpdates from './test-stack-header-selective-updates-ios';
 import TestStackHeaderMenuOptionsIOS from './test-stack-header-menu-options-ios';
 import TestStackHeaderTitleAppearance from './test-stack-header-title-appearance-android';
+import TestStackHeaderContentInsets from './test-stack-header-content-insets-android';
 
 // Scenario entry-point components — each scenario's default export re-exported
 // under a name for direct rendering (e.g. from App.tsx or e2e harnesses).
@@ -55,6 +56,7 @@ export { default as TestStackToolbarNestedMenu } from './test-stack-toolbar-nest
 export { default as TestStackToolbarMenuBatchCommands } from './test-stack-toolbar-menu-batch-commands-android';
 export { default as TestStackToolbarMenuA11y } from './test-stack-toolbar-menu-a11y-android';
 export { default as TestStackHeaderTitleAppearance } from './test-stack-header-title-appearance-android';
+export { default as TestStackHeaderContentInsets } from './test-stack-header-content-insets-android';
 
 const scenarios = {
   TestStackPreventNativeDismissSingleStack,
@@ -82,6 +84,7 @@ const scenarios = {
   TestStackToolbarMenuBatchCommands,
   TestStackToolbarMenuA11y,
   TestStackHeaderTitleAppearance,
+  TestStackHeaderContentInsets,
 };
 
 const StackScenarioGroup: ScenarioGroup<keyof typeof scenarios> = {
